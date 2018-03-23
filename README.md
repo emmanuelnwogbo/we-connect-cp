@@ -3,7 +3,6 @@
 <h1>Table of Contents</h1>
 <p>1.<a href="#techstack">Tech Stack</a></p>
 <p>2.<a href="#installationandsetup">General Installation and Setup</a></p>
-<p>3.<a href="#runningthetests">Tests</a></p>
 <p>4.<a href="#licence">License</a></p>
 
 <h1 id="techstack">Tech Stack</h1>
@@ -13,17 +12,11 @@
 <p>If you'd like to set this project up on your local machine please follow the steps below carefully.</p>
 <ul>
   <li>Install NodeJS: If you don't already have nodejs installed on your computer, pls follow <a href="https://nodejs.org/en/">this link</a> to install</li>
-  <li>Clone this repo: Open your terminal (Mac or Linux) or command prompt (Windows), then enter this command </br><code>git clone https://github.com/emmanuelnwogbo/we-connect-app.git</code></li>
+  <li>Install PostgresSQL: If you don't already have PostgreSQL installed on your computer, pls follow <a href="https://www.postgresql.org/">this link</a> to install it, or use an online PostgreSQL database like ElephantDB if you don't feel like going through the installment process</li>
+  <li>Clone this repo: Open your terminal (Mac or Linux) or command prompt (Windows), then enter this command </br><code>git clone https://github.com/emmanuelnwogbo/we-connect.git</code></li>
   <li>Installing project dependencies: In your terminal/command line enter the command and let it install the dependencies needed for the app to function</br><code>npm install</code></li>
   <li>Running the App: in the root directory of the app folder, enter the following command in your terminal or command prompt</br><code>npm run start</code></li>
 </ul>
-
-<h1 id="runningthetests">Tests</h1>
-<p>I've written a couple of tests for this projects code, pls look into the server/tests directory to find them. The test suite is set up useing mocha and chai (check the projects package.json file)</p></br>
-
-<h2>Running the tests</h2>
-<p>To run the tests use this command</p></br>
-<code>npm run test</code>
 
 <h1 id="licence">Licence</h1>
 <p>

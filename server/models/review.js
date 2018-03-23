@@ -1,10 +1,39 @@
-'use strict';
-module.exports = (sequelize, DataTypes) => {
-  var Review = sequelize.define('Review', {
-    body: DataTypes.STRING
-  }, {});
-  Review.associate = function(models) {
-    // associations can be defined here
+export default (sequelize, DataTypes) => {
+  const Review = sequelize.define('Review', {
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: true,
+      },
+    },
+    review: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: true,
+      },
+    },
+    businessId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notEmpty: true,
+      },
+    },
+    userId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notEmpty: true,
+      },
+    },
+  });
+  Review.associate = models => {
+    Review.belongsTo(models.Business, {
+      foreignKey: 'businessId',
+      onDelete: 'CASCADE',
+    });
   };
   return Review;
 };

@@ -1,6 +1,0 @@
-{
-  "development": {
-    "url":
-      "postgres://voakdumm:CLmz-iakNCzlsfhD2LxCLgOd-08lRi9S@stampy.db.elephantsql.com:5432/voakdumm"
-  }
-}

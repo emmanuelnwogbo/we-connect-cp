@@ -27,7 +27,6 @@
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "lodash": "^4.17.5",
-    "pg": "^7.4.1",
     "sequelize": "^4.37.4"
   },
   "devDependencies": {

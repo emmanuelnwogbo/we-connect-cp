@@ -21,7 +21,9 @@
     "body-parser": "^1.18.2",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
-    "lodash": "^4.17.5"
+    "lodash": "^4.17.5",
+    "pg": "^7.4.1",
+    "sequelize": "^4.37.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
